@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
 
+#ifndef EXERCICE
 #define EXERCISE 1
+#endif
 
 #if EXERCISE == 1
 #include <iostream>
