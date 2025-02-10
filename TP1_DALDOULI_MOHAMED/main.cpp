@@ -1,7 +1,8 @@
 #include <iostream>
 
-// Définition d'un macro pour choisir l'exercice
-#define EXERCICE 3  // Changez ce nombre pour choisir l'exercice 
+#ifndef EXERCICE
+#define EXERCISE 1
+#endif
 
 #if EXERCICE == 1
 int main() {
