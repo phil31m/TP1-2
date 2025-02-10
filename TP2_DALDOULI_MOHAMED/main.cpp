@@ -6,7 +6,7 @@
 #endif
 
 #if EXERCISE == 1
-#include <iostream>
+
 #define PI 3.14159
 
 #ifdef DEBUG
@@ -22,7 +22,7 @@ int main() {
 }
 
 #elif EXERCISE == 2
-#include <iostream>
+
 
 int main(int argc, char* argv[]) {
     for (int i = 1; i < argc; ++i) {
@@ -46,7 +46,7 @@ int main() {
 }
 
 #elif EXERCISE == 4
-#include <iostream>
+
 
 int main() {
     int entier;
@@ -60,5 +60,8 @@ int main() {
     std::cout << "Valeurs saisies: " << entier << " et " << decimal << std::endl;
     return 0;
 }
+
+#else
+#error "Veuillez definir EXERCICE valide ( -DEXERCICE = 1 ou 2 ... ) "
 
 #endif
